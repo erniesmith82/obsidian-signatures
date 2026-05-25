@@ -49,17 +49,18 @@
 
 <Navbar />
 
-<main id="top" class="min-h-screen overflow-hidden bg-[url('/images/marble-gold-bg.jpg')] bg-cover bg-center text-[#f5e7c1]">
-	<!-- HERO / MOCKUP 1 STYLE -->
+<main id="top" class="min-h-screen overflow-hidden bg-black text-[#f5e7c1]">
+	<!-- HERO -->
 	<section class="relative min-h-screen overflow-hidden pt-24">
-		<div class="absolute inset-0 bg-black/70"></div>
-
 		<div
-			class="absolute inset-0 bg-[url('/images/marble-gold-bg.jpg')] bg-cover bg-center opacity-50"
+			class="absolute inset-0 bg-[url('/images/marble-gold-bg.jpg')] bg-cover bg-center"
 		></div>
 
-		<div class="relative z-10 mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-10 px-6 py-16 md:grid-cols-2 lg:px-8">
-			<!-- LEFT CONTENT -->
+		<div class="absolute inset-0 bg-black/58"></div>
+
+		<div
+			class="relative z-10 mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-10 px-6 py-16 md:grid-cols-2 lg:px-8"
+		>
 			<div class="max-w-2xl">
 				<p class="mb-4 text-xs uppercase tracking-[0.45em] text-[#c8a96bcc]">
 					Obsidian Signatures Partners
@@ -73,7 +74,7 @@
 					<span class="text-[#d7b879]">Trusted Everywhere.</span>
 				</h1>
 
-				<div class="mb-7 h-[2px] w-16 bg-[#d7b879]"></div>
+				<div class="mb-7 h-0.5 w-16 bg-[#d7b879]"></div>
 
 				<p class="mb-10 max-w-md text-base leading-relaxed text-[#f5e7c1cc]">
 					Professional notary services you can rely on, wherever you are,
@@ -82,14 +83,16 @@
 
 				<div class="flex flex-col gap-4 sm:flex-row sm:items-center">
 					<a
-						href="#contact"
+						// eslint-disable-next-line svelte/no-navigation-without-resolve
+						href="/contact"
 						class="inline-flex items-center justify-center bg-[#d7b879] px-8 py-4 text-sm font-bold uppercase tracking-widest text-black transition hover:bg-[#f1d79a]"
 					>
 						Book an Appointment
 					</a>
 
 					<a
-						href="#services"
+						// eslint-disable-next-line svelte/no-navigation-without-resolve
+						href="/services"
 						class="inline-flex items-center justify-center gap-3 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-[#f5e7c1] transition hover:text-[#d7b879]"
 					>
 						Learn More
@@ -98,67 +101,60 @@
 				</div>
 			</div>
 
-			<!-- RIGHT IMAGE CARD -->
-			<div class="relative hidden md:block">
-				
-				<div class="relative hidden md:block">
-	<div
-		class="h-[720px] scale-125 bg-[url('/images/notary-hero.png')] bg-contain bg-no-repeat bg-center"
-	>
-						<div class="flex h-full items-center justify-center bg-black/25 p-10">
-							<div class="relative">
-								<div
-									class="absolute inset-0 rounded-full bg-[#d7b87933] blur-3xl"
-								></div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- FEATURE BAR -->
-		<div class="relative z-10 border-y border-[#c8a96b22] bg-[#111111]/95 px-6 py-8 backdrop-blur-xl">
-			<div class="mx-auto grid max-w-7xl gap-8 text-center sm:grid-cols-2 lg:grid-cols-4">
-				{#each features as feature (feature.title)}
-					<div>
-						<div class="mb-3 text-3xl text-[#d7b879]">
-							{feature.icon}
-						</div>
-
-						<h3 class="mb-1 text-sm font-bold uppercase tracking-widest text-[#f8f1df]">
-							{feature.title}
-						</h3>
-
-						<p class="text-sm text-[#f5e7c1aa]">
-							{feature.text}
-						</p>
-					</div>
-				{/each}
+			<div class="relative hidden translate-x-6 md:block">
+				<div
+					class="h-[640px] scale-110 bg-[url('/images/notary-hero.png')] bg-contain bg-center bg-no-repeat lg:h-[720px] lg:scale-125"
+				></div>
 			</div>
 		</div>
 	</section>
 
+	<!-- FEATURE BAR -->
+	<section class="border-y border-[#c8a96b22] bg-[#101010] px-6 py-10">
+		<div class="mx-auto grid max-w-7xl gap-10 text-center sm:grid-cols-2 lg:grid-cols-4">
+			{#each features as feature (feature.title)}
+				<div>
+					<div class="mb-3 text-3xl text-[#d7b879]">
+						{feature.icon}
+					</div>
+
+					<h3 class="mb-2 text-sm font-bold uppercase tracking-widest text-[#f8f1df]">
+						{feature.title}
+					</h3>
+
+					<p class="text-sm text-[#f5e7c1aa]">
+						{feature.text}
+					</p>
+				</div>
+			{/each}
+		</div>
+	</section>
+
 	<!-- SERVICES -->
-	<section id="services" class="px-6 py-24">
-		<div class="mx-auto max-w-7xl">
-			<div class="mb-16 max-w-2xl">
-				<p class="mb-3 text-sm uppercase tracking-[0.4em] text-[#c8a96bcc]">
+	<section id="services" class="relative px-6 py-28">
+		<div
+			class="absolute inset-0 bg-[url('/images/marble-gold-bg.jpg')] bg-cover bg-center opacity-25"
+		></div>
+
+		<div class="absolute inset-0 bg-black/70"></div>
+
+		<div class="relative z-10 mx-auto max-w-7xl">
+			<div class="mb-20 max-w-2xl">
+				<p class="mb-4 text-sm uppercase tracking-[0.4em] text-[#c8a96bcc]">
 					Our Services
 				</p>
 
-				<h2 class="font-serif text-4xl text-[#f8f1df] md:text-5xl">
+				<h2 class="font-serif text-4xl leading-tight text-[#f8f1df] md:text-5xl">
 					Notary Services Tailored to You.
 				</h2>
 
-				<div class="mt-6 h-[2px] w-16 bg-[#d7b879]"></div>
+				<div class="mt-8 h-0.5 w-16 bg-[#d7b879]"></div>
 			</div>
 
-			<div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+			<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				{#each services as service (service)}
 					<div
-						class="rounded-2xl border border-[#c8a96b22] bg-black/45 p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-[#c8a96b77]"
+						class="rounded-4xl border border-[#c8a96b22] bg-black/60 p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c8a96b77]"
 					>
 						<p class="text-lg font-semibold text-[#f8f1df]">
 							{service}
@@ -170,9 +166,9 @@
 	</section>
 
 	<!-- CONTACT -->
-	<section id="contact" class="px-6 py-24">
+	<section id="contact" class="bg-[#101010] px-6 py-28">
 		<div
-			class="mx-auto max-w-5xl rounded-[2rem] border border-[#c8a96b33] bg-black/60 p-8 text-center backdrop-blur-xl md:p-14"
+			class="mx-auto max-w-5xl rounded-4xl border border-[#c8a96b33] bg-black/55 p-8 text-center md:p-14"
 		>
 			<p class="mb-3 text-sm uppercase tracking-[0.4em] text-[#c8a96bcc]">
 				Contact
