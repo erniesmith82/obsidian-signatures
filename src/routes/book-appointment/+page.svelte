@@ -1,5 +1,4 @@
 <script>
-	import { goto } from '$app/navigation';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
@@ -47,19 +46,13 @@
 			input.showPicker();
 		}
 	}
-
-// eslint-disable-next-line svelte/no-navigation-without-resolve
-async function submitForm() {
-	await goto('/confirmation');
-}
 </script>
 
 <svelte:head>
-	<title>Contact | Obsidian Signatures Partners</title>
-
+	<title>Request an Appointment | Obsidian Signatures Partners</title>
 	<meta
 		name="description"
-		content="Contact Obsidian Signatures Partners to request a mobile notary appointment."
+		content="Request a mobile notary appointment with Obsidian Signatures Partners. Submit your document details and preferred appointment time."
 	/>
 </svelte:head>
 
@@ -82,13 +75,10 @@ async function submitForm() {
 				</p>
 
 				<h1 class="max-w-4xl font-serif text-5xl leading-tight text-[#f8f1df] md:text-7xl">
-	Request an
-	<br />
-
-	<span class="text-[#d7b879]">
-		Appointment.
-	</span>
-</h1>
+					Request Your
+					<br />
+					<span class="text-[#d7b879]">Appointment.</span>
+				</h1>
 
 				<div class="mt-7 h-0.5 w-16 bg-[#d7b879]"></div>
 
@@ -110,40 +100,28 @@ async function submitForm() {
 						<p class="mb-1 text-[10px] uppercase tracking-[0.3em] text-[#c8a96bcc]">
 							Email
 						</p>
-
-						<p class="text-sm text-[#f8f1df]">
-							info@obsidiansignatures.com
-						</p>
+						<p class="text-sm text-[#f8f1df]">info@obsidiansignatures.com</p>
 					</div>
 
 					<div>
 						<p class="mb-1 text-[10px] uppercase tracking-[0.3em] text-[#c8a96bcc]">
 							Phone
 						</p>
-
-						<p class="text-sm text-[#f8f1df]">
-							(305) 000-0000
-						</p>
+						<p class="text-sm text-[#f8f1df]">(305) 000-0000</p>
 					</div>
 
 					<div>
 						<p class="mb-1 text-[10px] uppercase tracking-[0.3em] text-[#c8a96bcc]">
 							Service Area
 						</p>
-
-						<p class="text-sm text-[#f8f1df]">
-							Florida Mobile Notary Services
-						</p>
+						<p class="text-sm text-[#f8f1df]">Florida Mobile Notary Services</p>
 					</div>
 
 					<div>
 						<p class="mb-1 text-[10px] uppercase tracking-[0.3em] text-[#c8a96bcc]">
 							Hours
 						</p>
-
-						<p class="text-sm text-[#f8f1df]">
-							By Appointment Only
-						</p>
+						<p class="text-sm text-[#f8f1df]">By Appointment Only</p>
 					</div>
 				</div>
 			</aside>
@@ -170,19 +148,14 @@ async function submitForm() {
 			</div>
 
 			<form
+				method="POST"
 				class="rounded-4xl border border-[#c8a96b33] bg-black/60 p-7 md:p-10"
-				onsubmit={(e) => {
-					e.preventDefault();
-					submitForm();
-				}}
 			>
 				<div class="grid gap-6 md:grid-cols-2">
 					<label>
-						<span class="mb-2 block text-sm text-[#f5e7c1cc]">
-							Full Name
-						</span>
-
+						<span class="mb-2 block text-sm text-[#f5e7c1cc]">Full Name</span>
 						<input
+							name="name"
 							bind:value={form.name}
 							type="text"
 							required
@@ -192,11 +165,9 @@ async function submitForm() {
 					</label>
 
 					<label>
-						<span class="mb-2 block text-sm text-[#f5e7c1cc]">
-							Email Address
-						</span>
-
+						<span class="mb-2 block text-sm text-[#f5e7c1cc]">Email Address</span>
 						<input
+							name="email"
 							bind:value={form.email}
 							type="email"
 							required
@@ -206,11 +177,9 @@ async function submitForm() {
 					</label>
 
 					<label>
-						<span class="mb-2 block text-sm text-[#f5e7c1cc]">
-							Phone Number
-						</span>
-
+						<span class="mb-2 block text-sm text-[#f5e7c1cc]">Phone Number</span>
 						<input
+							name="phone"
 							bind:value={form.phone}
 							type="tel"
 							required
@@ -220,33 +189,27 @@ async function submitForm() {
 					</label>
 
 					<label>
-						<span class="mb-2 block text-sm text-[#f5e7c1cc]">
-							Service Needed
-						</span>
-
+						<span class="mb-2 block text-sm text-[#f5e7c1cc]">Service Needed</span>
 						<select
+							name="service"
 							bind:value={form.service}
 							required
 							class="w-full rounded-2xl border border-[#c8a96b22] bg-black/50 px-5 py-4 text-[#f8f1df] outline-none focus:border-[#d7b879]"
 						>
 							<option value="">Select a service</option>
-
 							{#each services as service (service)}
-								<option value={service}>
-									{service}
-								</option>
+								<option value={service}>{service}</option>
 							{/each}
 						</select>
 					</label>
 
 					<label>
-						<span class="mb-2 block text-sm text-[#f5e7c1cc]">
-							Preferred Date
-						</span>
+						<span class="mb-2 block text-sm text-[#f5e7c1cc]">Preferred Date</span>
 
 						<div class="relative">
 							<input
 								id="appointmentDate"
+								name="appointmentDate"
 								bind:value={form.appointmentDate}
 								type="date"
 								required
@@ -265,21 +228,17 @@ async function submitForm() {
 					</label>
 
 					<label>
-						<span class="mb-2 block text-sm text-[#f5e7c1cc]">
-							Preferred Time
-						</span>
+						<span class="mb-2 block text-sm text-[#f5e7c1cc]">Preferred Time</span>
 
 						<select
+							name="appointmentTime"
 							bind:value={form.appointmentTime}
 							required
 							class="w-full rounded-2xl border border-[#c8a96b22] bg-black/50 px-5 py-4 text-[#f8f1df] outline-none focus:border-[#d7b879]"
 						>
 							<option value="">Select a preferred time</option>
-
 							{#each appointmentTimes as time (time)}
-								<option value={time}>
-									{time}
-								</option>
+								<option value={time}>{time}</option>
 							{/each}
 						</select>
 					</label>
@@ -288,8 +247,8 @@ async function submitForm() {
 						<span class="mb-2 block text-sm text-[#f5e7c1cc]">
 							Appointment Location
 						</span>
-
 						<input
+							name="location"
 							bind:value={form.location}
 							type="text"
 							required
@@ -299,11 +258,9 @@ async function submitForm() {
 					</label>
 
 					<label class="md:col-span-2">
-						<span class="mb-2 block text-sm text-[#f5e7c1cc]">
-							Message
-						</span>
-
+						<span class="mb-2 block text-sm text-[#f5e7c1cc]">Message</span>
 						<textarea
+							name="message"
 							bind:value={form.message}
 							rows="6"
 							class="w-full resize-none rounded-2xl border border-[#c8a96b22] bg-black/50 px-5 py-4 text-[#f8f1df] outline-none placeholder:text-[#f5e7c177] focus:border-[#d7b879]"
