@@ -108,7 +108,7 @@
 				<div class="flex flex-col gap-4 sm:flex-row sm:items-center">
 					<a
 						// eslint-disable-next-line svelte/no-navigation-without-resolve
-						href="/contact"
+						href="/book-appointment"
 						class="inline-flex items-center justify-center bg-[#d7b879] px-8 py-4 text-sm font-bold uppercase tracking-widest text-black transition hover:bg-[#f1d79a]"
 					>
 						Book an Appointment
