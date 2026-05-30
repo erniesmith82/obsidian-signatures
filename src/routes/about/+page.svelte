@@ -4,11 +4,33 @@
 </script>
 
 <svelte:head>
-	<title>About | Obsidian Signatures Partners</title>
+	<title>
+		About | Obsidian Signatures Partners
+	</title>
 
 	<meta
 		name="description"
-		content="Learn more about Obsidian Signatures Partners and our commitment to professional, reliable, and convenient notary services."
+		content="Learn about Obsidian Signatures Partners and our commitment to professionalism, confidentiality, reliability, and exceptional mobile notary services throughout Florida."
+	/>
+
+	<meta
+		property="og:title"
+		content="About | Obsidian Signatures Partners"
+	/>
+
+	<meta
+		property="og:description"
+		content="Learn about our commitment to professional and reliable mobile notary services."
+	/>
+
+	<meta
+		property="og:type"
+		content="website"
+	/>
+
+	<meta
+		property="og:image"
+		content="/logos/obsidian-quill.png"
 	/>
 </svelte:head>
 

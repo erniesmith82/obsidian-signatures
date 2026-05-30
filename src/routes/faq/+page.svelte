@@ -68,11 +68,11 @@
 	];
 
 	/**
- * @param {string} question
- */
-function toggleQuestion(question) {
-	openQuestion = openQuestion === question ? '' : question;
-}
+	 * @param {string} question
+	 */
+	function toggleQuestion(question) {
+		openQuestion = openQuestion === question ? '' : question;
+	}
 </script>
 
 <svelte:head>
@@ -94,12 +94,12 @@ function toggleQuestion(question) {
 
 		<div class="absolute inset-0 bg-black/60"></div>
 
-		<div class="relative z-10 mx-auto max-w-7xl">
+		<div class="relative z-10 mx-auto max-w-7xl text-center">
 			<p class="mb-4 text-xs uppercase tracking-[0.45em] text-[#c8a96bcc]">
 				Frequently Asked Questions
 			</p>
 
-			<h1 class="max-w-5xl font-serif text-5xl leading-tight text-[#f8f1df] md:text-7xl">
+			<h1 class="mx-auto max-w-5xl font-serif text-5xl leading-tight text-[#f8f1df] md:text-7xl">
 				Answers Before
 				<br />
 
@@ -108,9 +108,9 @@ function toggleQuestion(question) {
 				</span>
 			</h1>
 
-			<div class="mt-7 h-0.5 w-16 bg-[#d7b879]"></div>
+			<div class="mx-auto mt-7 h-0.5 w-16 bg-[#d7b879]"></div>
 
-			<p class="mt-8 max-w-3xl text-base leading-relaxed text-[#f5e7c1cc]">
+			<p class="mx-auto mt-8 max-w-3xl text-base leading-relaxed text-[#f5e7c1cc]">
 				Find answers to common questions about mobile notary appointments,
 				required identification, document preparation, witnesses, pricing,
 				and scheduling.
@@ -119,19 +119,19 @@ function toggleQuestion(question) {
 	</section>
 
 	<section class="bg-[#101010] px-6 py-24">
-		<div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.75fr_1.25fr]">
-			<div>
+		<div class="mx-auto max-w-5xl">
+			<div class="mb-16 text-center">
 				<p class="mb-4 text-xs uppercase tracking-[0.45em] text-[#c8a96bcc]">
 					Before Your Appointment
 				</p>
 
 				<h2 class="font-serif text-4xl leading-tight text-[#f8f1df] md:text-5xl">
-					What clients usually ask.
+					What Clients Usually Ask.
 				</h2>
 
-				<div class="mt-7 h-0.5 w-16 bg-[#d7b879]"></div>
+				<div class="mx-auto mt-7 h-0.5 w-16 bg-[#d7b879]"></div>
 
-				<p class="mt-8 max-w-md leading-relaxed text-[#f5e7c1bb]">
+				<p class="mx-auto mt-8 max-w-2xl leading-relaxed text-[#f5e7c1bb]">
 					These answers are provided as general information. For questions about
 					a specific document or appointment, contact us directly before booking.
 				</p>
@@ -144,21 +144,21 @@ function toggleQuestion(question) {
 				</a>
 			</div>
 
-			<div class="space-y-5">
+			<div class="space-y-4">
 				{#each faqs as faq (faq.question)}
 					<article class="rounded-4xl border border-[#c8a96b22] bg-black/50">
 						<button
 							type="button"
-							class="flex w-full items-center justify-between gap-6 px-8 py-7 text-left"
+							class="flex w-full items-center justify-between gap-6 px-7 py-5 text-left"
 							onclick={() => toggleQuestion(faq.question)}
 							aria-expanded={openQuestion === faq.question}
 						>
-							<span class="font-serif text-2xl text-[#f8f1df] md:text-3xl">
+							<span class="font-serif text-xl text-[#f8f1df] md:text-2xl">
 								{faq.question}
 							</span>
 
 							<span
-								class={`shrink-0 text-2xl leading-none text-[#d7b879] transition duration-300 ${
+								class={`shrink-0 text-xl leading-none text-[#d7b879] transition duration-300 ${
 									openQuestion === faq.question ? 'rotate-45' : ''
 								}`}
 							>
@@ -167,8 +167,8 @@ function toggleQuestion(question) {
 						</button>
 
 						{#if openQuestion === faq.question}
-							<div class="border-t border-[#c8a96b22] px-8 pb-8 pt-4">
-								<p class="text-lg leading-relaxed text-[#f5e7c1bb] md:text-xl">
+							<div class="border-t border-[#c8a96b22] px-7 pb-6 pt-4">
+								<p class="text-base leading-relaxed text-[#f5e7c1bb] md:text-lg">
 									{faq.answer}
 								</p>
 							</div>

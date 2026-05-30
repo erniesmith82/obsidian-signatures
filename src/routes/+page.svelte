@@ -39,12 +39,36 @@
 </script>
 
 <svelte:head>
-	<title>Obsidian Signatures Partners | Mobile Notary Services</title>
+	<title>
+		Obsidian Signatures Partners | Mobile Notary Services
+	</title>
 
 	<meta
 		name="description"
-		content="Professional mobile notary services you can rely on, wherever you are, whenever you need us."
+		content="Professional mobile notary services throughout Florida. Loan signings, acknowledgments, jurats, affidavits, powers of attorney, and more."
 	/>
+
+	<meta
+		property="og:title"
+		content="Obsidian Signatures Partners | Mobile Notary Services"
+	/>
+
+	<meta
+		property="og:description"
+		content="Professional mobile notary services throughout Florida."
+	/>
+
+	<meta
+		property="og:type"
+		content="website"
+	/>
+
+	<meta
+		property="og:image"
+		content="/logos/obsidian-quill.png"
+	/>
+
+	
 </svelte:head>
 
 <Navbar />

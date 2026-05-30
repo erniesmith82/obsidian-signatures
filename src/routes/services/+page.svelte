@@ -84,10 +84,33 @@
 </script>
 
 <svelte:head>
-	<title>Services | Obsidian Signatures Partners</title>
+	<title>
+		Services | Obsidian Signatures Partners
+	</title>
+
 	<meta
 		name="description"
-		content="Explore professional mobile notary, loan signing, jurat, acknowledgment, affidavit, and document signing services from Obsidian Signatures Partners."
+		content="Explore our professional notary services including loan signings, acknowledgments, jurats, affidavits, powers of attorney, mobile notary services, and more."
+	/>
+
+	<meta
+		property="og:title"
+		content="Services | Obsidian Signatures Partners"
+	/>
+
+	<meta
+		property="og:description"
+		content="Professional mobile notary services for individuals, families, businesses, and real estate professionals."
+	/>
+
+	<meta
+		property="og:type"
+		content="website"
+	/>
+
+	<meta
+		property="og:image"
+		content="/logos/obsidian-quill.png"
 	/>
 </svelte:head>
 
