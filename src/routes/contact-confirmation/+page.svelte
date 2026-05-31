@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+    import { resolve } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -42,14 +43,14 @@
 
 			<div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
 				<a
-					href="/"
+					href={resolve('/')}
 					class="bg-[#d7b879] px-8 py-4 text-sm font-bold uppercase tracking-widest text-black transition hover:bg-[#f1d79a]"
 				>
 					Return Home
 				</a>
 
 				<a
-					href="/services"
+					href={resolve('/services')}
 					class="border border-[#d7b879] px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#d7b879] transition hover:bg-[#d7b879] hover:text-black"
 				>
 					View Services

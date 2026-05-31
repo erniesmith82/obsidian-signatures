@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import { resolve } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -209,7 +210,7 @@
 			</p>
 
 			<a
-				href="/contact"
+				href={resolve('/contact')}
 				class="inline-flex bg-[#d7b879] px-8 py-4 text-sm font-bold uppercase tracking-widest text-black transition hover:bg-[#f1d79a]"
 			>
 				Contact Us

@@ -127,7 +127,7 @@
 
 			<div class="relative hidden translate-x-6 md:block">
 				<div
-					class="h-[640px] scale-110 bg-[url('/images/notary-hero.png')] bg-contain bg-center bg-no-repeat lg:h-[720px] lg:scale-125"
+					class="h-160 scale-110 bg-[url('/images/notary-hero.png')] bg-contain bg-center bg-no-repeat lg:h-180  lg:scale-125"
 				></div>
 			</div>
 		</div>
