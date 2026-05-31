@@ -1,5 +1,5 @@
 import { fail, redirect } from '@sveltejs/kit';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 import { env } from '$env/dynamic/private';
 
 export const actions = {
@@ -30,21 +30,15 @@ export const actions = {
 			throw redirect(303, '/contact-confirmation');
 		}
 
-		const transporter = nodemailer.createTransport({
-			host: env.SMTP_HOST,
-			port: Number(env.SMTP_PORT || 587),
-			secure: false,
-			auth: {
-				user: env.SMTP_USER,
-				pass: env.SMTP_PASS
-			}
-		});
+		const resend = new Resend(env.RESEND_API_KEY);
 
-		await transporter.sendMail({
-			from: `"Obsidian Website" <${env.SMTP_FROM}>`,
-			to: env.INFO_TO || env.SMTP_FROM,
+		await resend.emails.send({
+			from: env.RESEND_FROM || 'Obsidian Website <info@obsidiansignatures.com>',
+			to: env.INFO_TO || 'info@obsidiansignatures.com',
 			replyTo: email,
-			subject: `New Contact Message: ${name}`,
+			subject: service
+				? `New Contact Message - ${service}`
+				: `New Contact Message`,
 			text: `
 New contact message submitted from obsidiansignatures.com
 
