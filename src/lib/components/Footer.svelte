@@ -10,11 +10,11 @@
 				/>
 
 				<div>
-					<h2 class="text-[15px] font-semibold tracking-[0.28em] text-[#f8f1df]">
+					<h2 class="text-[15px] font-semibold tracking-[0.28em] text-[#d7b879]">
 						OBSIDIAN
 					</h2>
 
-					<p class="text-[10px] tracking-[0.38em] text-[#c8a96bcc]">
+					<p class="text-[10px] tracking-[0.38em] text-[#d7b879]">
 						SIGNATURES PARTNERS
 					</p>
 				</div>

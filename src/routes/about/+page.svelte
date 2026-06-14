@@ -51,13 +51,10 @@
 				About Obsidian Signatures Partners
 			</p>
 
-			<h1 class="max-w-5xl font-serif text-5xl leading-tight text-[#f8f1df] md:text-7xl">
+			<h1 class="max-w-5xl font-serif text-5xl leading-tight text-[#d7b879] md:text-7xl">
 				Built on Trust.
 				<br />
-
-				<span class="text-[#d7b879]">
-					Driven by Professionalism.
-				</span>
+				Driven by Professionalism.
 			</h1>
 
 			<div class="mt-7 h-0.5 w-16 bg-[#d7b879]"></div>
@@ -78,9 +75,8 @@
 					Our Story
 				</p>
 
-				<h2 class="font-serif text-4xl leading-tight text-[#f8f1df] md:text-5xl">
-					Professional service with
-					<span class="text-[#d7b879]">a personal touch.</span>
+				<h2 class="font-serif text-4xl leading-tight text-[#d7b879] md:text-5xl">
+					Professional service with a personal touch.
 				</h2>
 
 				<div class="mt-7 h-0.5 w-16 bg-[#d7b879]"></div>
@@ -129,9 +125,8 @@
 					Why Clients Choose Us
 				</p>
 
-				<h2 class="font-serif text-4xl leading-tight text-[#f8f1df] md:text-5xl">
-					Service rooted in
-					<span class="text-[#d7b879]">trust and reliability.</span>
+				<h2 class="font-serif text-4xl leading-tight text-[#d7b879] md:text-5xl">
+					Service rooted in trust and reliability.
 				</h2>
 			</div>
 
@@ -200,7 +195,7 @@
 				Ready to Schedule?
 			</p>
 
-			<h2 class="mb-6 font-serif text-4xl text-[#f8f1df] md:text-5xl">
+			<h2 class="mb-6 font-serif text-4xl text-[#d7b879] md:text-5xl">
 				Let’s make the process simple.
 			</h2>
 

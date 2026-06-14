@@ -86,7 +86,7 @@
 			class="relative z-10 mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-10 px-6 py-16 md:grid-cols-2 lg:px-8"
 		>
 			<div class="max-w-2xl">
-				<p class="mb-4 text-xs uppercase tracking-[0.45em] text-[#c8a96bcc]">
+				<p class="mb-4 text-xl uppercase tracking-[0.45em] text-[#c8a96bcc]">
 					Obsidian Signatures Partners
 				</p>
 

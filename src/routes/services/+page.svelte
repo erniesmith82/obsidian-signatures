@@ -129,10 +129,10 @@
 				Obsidian Signatures Partners
 			</p>
 
-			<h1 class="max-w-4xl font-serif text-5xl leading-tight text-[#f8f1df] md:text-7xl">
+			<h1 class="max-w-4xl font-serif text-5xl leading-tight text-[#d7b879] md:text-7xl">
 				Notary Services
 				<br />
-				<span class="text-[#d7b879]">Handled With Precision.</span>
+				Handled With Precision.
 			</h1>
 
 			<div class="mt-7 h-0.5 w-16 bg-[#d7b879]"></div>
@@ -208,7 +208,7 @@
 						Book With Confidence
 					</p>
 
-					<h2 class="font-serif text-4xl text-[#f8f1df] md:text-5xl">
+					<h2 class="font-serif text-4xl text-[#d7b879] md:text-5xl">
 						Need a document signed?
 					</h2>
 				</div>

@@ -17,18 +17,18 @@
 		},
 		{
 			question: 'What do I need to bring to my appointment?',
-			answer:
-				'Please bring a valid, government-issued photo ID and the document that needs notarization. The document should be complete, but unsigned, unless you have been instructed otherwise.'
-		},
+	        answer:
+		        'Please bring a valid, government-issued photo ID and the document that needs notarization. The document should be complete, but unsigned, unless you have been instructed otherwise. For Florida refinance transactions, all spouses must be present at the signing, even if they are not listed on the loan, title, or mortgage documents.'
+        },
 		{
 			question: 'Can you notarize a document that has already been signed?',
 			answer:
-				'Some documents may require the signer to sign in front of the notary. Others may only require acknowledgment of a previous signature. If you are unsure, contact us before your appointment.'
+				'Generally, no. Most documents requiring notarization must be signed in front of the notary. Please do not sign your documents before your appointment unless you have been specifically instructed otherwise.'
 		},
 		{
 			question: 'Do you provide witnesses?',
 			answer:
-				'Witness availability may vary. If your document requires witnesses, please let us know when requesting your appointment so we can determine whether witness coordination is available.'
+				'Yes. We can provide a witness for an additional $30 fee. If your document requires witnesses, please let us know when scheduling your appointment so we can ensure the appropriate number of witnesses are available.'
 		},
 		{
 			question: 'What types of documents can you notarize?',
@@ -36,14 +36,14 @@
 				'Common documents include acknowledgments, jurats, affidavits, powers of attorney, loan documents, real estate documents, authorization forms, and other documents requiring notarization.'
 		},
 		{
-			question: 'Can you give legal advice or prepare documents?',
+			question: 'Can a notary provide legal advice?',
 			answer:
 				'No. A notary public cannot provide legal advice, explain legal rights, or prepare legal documents unless legally authorized to do so. Please consult an attorney for legal guidance.'
 		},
 		{
 			question: 'How does appointment approval work?',
 			answer:
-				'Submitting an appointment request does not automatically confirm the appointment. Requests are reviewed based on availability, service type, location, travel considerations, and scheduling needs.'
+				'Submitting an appointment request does not automatically confirm the appointment. Requests are reviewed based on availability, service type, location, travel considerations, and scheduling needs. Appointment requests are typically confirmed within 12 hours. Same-day and rush appointments may be available for an additional fee and are subject to availability.'
 		},
 		{
 			question: 'Do you offer remote online notarization?',
@@ -99,7 +99,7 @@
 				Frequently Asked Questions
 			</p>
 
-			<h1 class="mx-auto max-w-5xl font-serif text-5xl leading-tight text-[#f8f1df] md:text-7xl">
+			<h1 class="mx-auto max-w-5xl font-serif text-5xl leading-tight text-[#d7b879] md:text-7xl">
 				Answers Before
 				<br />
 
@@ -125,7 +125,7 @@
 					Before Your Appointment
 				</p>
 
-				<h2 class="font-serif text-4xl leading-tight text-[#f8f1df] md:text-5xl">
+				<h2 class="font-serif text-4xl leading-tight text-[#d7b879] md:text-5xl">
 					What Clients Usually Ask.
 				</h2>
 
