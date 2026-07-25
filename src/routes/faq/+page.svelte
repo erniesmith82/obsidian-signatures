@@ -17,13 +17,13 @@
 		},
 		{
 			question: 'What do I need to bring to my appointment?',
-	        answer:
-		        'Please bring a valid, government-issued photo ID and the document that needs notarization. The document should be complete, but unsigned, unless you have been instructed otherwise. For Florida refinance transactions, all spouses must be present at the signing, even if they are not listed on the loan, title, or mortgage documents.'
-        },
+			answer:
+				'Please bring a valid, government-issued photo ID and the document that needs notarization. The document should be complete but unsigned. For Florida refinance transactions, all spouses must be present at the signing, even if they are not listed on the loan, title, or mortgage documents.'
+		},
 		{
 			question: 'Can you notarize a document that has already been signed?',
 			answer:
-				'Generally, no. Most documents requiring notarization must be signed in front of the notary. Please do not sign your documents before your appointment unless you have been specifically instructed otherwise.'
+				'Documents need to be signed in front of the notary.'
 		},
 		{
 			question: 'Do you provide witnesses?',
@@ -38,7 +38,7 @@
 		{
 			question: 'Can a notary provide legal advice?',
 			answer:
-				'No. A notary public cannot provide legal advice, explain legal rights, or prepare legal documents unless legally authorized to do so. Please consult an attorney for legal guidance.'
+				'No. A notary public cannot provide legal advice, explain legal rights, or prepare legal documents. Please consult an attorney for legal guidance.'
 		},
 		{
 			question: 'How does appointment approval work?',
@@ -48,22 +48,17 @@
 		{
 			question: 'Do you offer remote online notarization?',
 			answer:
-				'Remote online notarization availability may depend on the type of document, signer requirements, and applicable rules. Contact us with the document type and details so we can confirm availability.'
+				'Yes. Remote online notarization may be available depending on the type of document, signer requirements, and applicable rules. Contact us with the document type and details so we can confirm availability and provide instructions for the approved remote notarization platform.'
 		},
 		{
 			question: 'What areas do you serve?',
 			answer:
-				'Obsidian Signatures Partners provides mobile notary services in Florida. Service areas, travel availability, and travel fees may vary based on location.'
+				'Obsidian Signatures Partners provides mobile notary services throughout Florida. We may also perform remote online notarization services for clients located in other states. Service availability, travel distance, and travel fees may vary based on location.'
 		},
 		{
 			question: 'How much does a notarization cost?',
 			answer:
 				'Pricing may vary depending on the type of notarization, number of signatures, travel distance, appointment time, and any additional services requested. Contact us or request an appointment for pricing details.'
-		},
-		{
-			question: 'What happens after I submit an appointment request?',
-			answer:
-				'After submitting your request, we will review the details and contact you to confirm availability. Once approved, you will receive confirmation with the appointment details.'
 		}
 	];
 
