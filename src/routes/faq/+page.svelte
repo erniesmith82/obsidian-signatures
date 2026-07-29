@@ -16,9 +16,9 @@
 				'Yes. Appointments are recommended so we can review availability, travel distance, service type, and any special requirements before confirming your requested time.'
 		},
 		{
-			question: 'What do I need to bring to my appointment?',
+			question: 'What documents should I bring to my appointment?',
 			answer:
-				'Please bring a valid, government-issued photo ID and the document that needs notarization. The document should be complete but unsigned. For Florida refinance transactions, all spouses must be present at the signing, even if they are not listed on the loan, title, or mortgage documents.'
+				'Please bring a valid, government-issued photo ID. You may bring the document that needs to be notarized, or you may request printing services in advance. Documents that need to be printed must be emailed at least three hours before the scheduled appointment and will be subject to a printing and administrative fee. Documents should be complete but unsigned unless you have been instructed otherwise. For Florida refinance transactions, all spouses must be present at the signing, even if they are not listed on the loan, title, or mortgage documents.'
 		},
 		{
 			question: 'Can you notarize a document that has already been signed?',
@@ -33,7 +33,7 @@
 		{
 			question: 'What types of documents can you notarize?',
 			answer:
-				'Common documents include acknowledgments, jurats, affidavits, powers of attorney, loan documents, real estate documents, authorization forms, and other documents requiring notarization.'
+				'We notarize acknowledgments, jurats, affidavits, powers of attorney, loan documents, real estate documents, authorization forms, estate planning documents, business documents, and more. In general, we can assist with most documents requiring a lawful notarization, provided the document and signer meet all applicable notarial requirements.'
 		},
 		{
 			question: 'Can a notary provide legal advice?',
